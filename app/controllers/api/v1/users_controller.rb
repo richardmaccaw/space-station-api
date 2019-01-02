@@ -6,6 +6,7 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def create
+        byebug
         @user = User.new(user_params)
         if @user.save
             render json: @user
@@ -17,7 +18,7 @@ class Api::V1::UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit([:first_name, :last_name, :email_address, :longitude, :latitude])
+        params.require(:user).permit([:email_address, passes:["risetime"]])
     end
 end
 
