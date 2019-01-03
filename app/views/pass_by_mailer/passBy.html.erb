@@ -1,0 +1,7 @@
+<h1>ISS pass by times</h1>
+<p>Here are your next 5 pass by times</p>
+<ul>
+  <% @user.passes.split(',').each do |pass| %>
+    <li><%= pass %></li>
+  <%end%>
+</ul>
