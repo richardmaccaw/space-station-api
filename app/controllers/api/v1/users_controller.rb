@@ -6,12 +6,9 @@ class Api::V1::UsersController < ApplicationController
     end
 
     def create
-        byebug
         @user = User.new(user_params)
         if @user.save
-
             PassByMailer.passBy(@user).deliver_now
-
             render json: @user
         else
             render json: {error: 'Unable to create user.'}, status: 400
