@@ -18,7 +18,7 @@ class Api::V1::UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit([:email_address, passes:["risetime"]])
+        params.require(:user).permit([:email_address, passes:[]])
     end
 end
 
