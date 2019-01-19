@@ -15,7 +15,7 @@ No signup required, just head on over to the app to get started! You can plot yo
 * Ruby on Rails
 * Action Mailer
 * MVC framework
-* React front-end [Link to front-end](https://github.com/richardmaccaw/space-station)
+* React front-end [(link to front-end)](https://github.com/richardmaccaw/space-station)
 * Material-ui styling
 * Google Maps React
 
